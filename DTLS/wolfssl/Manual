@@ -1,3 +1,0 @@
-gcc -Wall -o client client_dtls.c -lwolfssl -L/usr/local/lib -I/usr/local/include/wolfssl
-
-gcc -Wall -o server server_dtls.c -lwolfssl -L/usr/local/lib -I/usr/local/include/wolfssl
