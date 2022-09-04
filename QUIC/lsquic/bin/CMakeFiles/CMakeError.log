@@ -1,0 +1,32 @@
+Determining if the IP_DONTFRAG exist failed with the following output:
+Change Dir: /home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cbe8a/fast && /usr/bin/make -f CMakeFiles/cmTC_cbe8a.dir/build.make CMakeFiles/cmTC_cbe8a.dir/build
+make[1]: ingresso nella directory «/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_cbe8a.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_cbe8a.dir/CheckSymbolExists.c.o   -c /home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘IP_DONTFRAG’ undeclared (first use in this function); did you mean ‘IPV6_DONTFRAG’?
+    8 |   return ((int*)(&IP_DONTFRAG))[argc];
+      |                   ^~~~~~~~~~~
+      |                   IPV6_DONTFRAG
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_cbe8a.dir/build.make:66: CMakeFiles/cmTC_cbe8a.dir/CheckSymbolExists.c.o] Errore 1
+make[1]: uscita dalla directory «/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_cbe8a/fast] Errore 2
+
+
+File /home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IP_DONTFRAG
+  return ((int*)(&IP_DONTFRAG))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

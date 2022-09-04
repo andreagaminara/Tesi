@@ -1,0 +1,9 @@
+/home/andrea/experiments/TLS/libcurl/CMakeFiles/install/local.dir
+/home/andrea/experiments/TLS/libcurl/CMakeFiles/edit_cache.dir
+/home/andrea/experiments/TLS/libcurl/CMakeFiles/package_source.dir
+/home/andrea/experiments/TLS/libcurl/CMakeFiles/install.dir
+/home/andrea/experiments/TLS/libcurl/CMakeFiles/list_install_components.dir
+/home/andrea/experiments/TLS/libcurl/CMakeFiles/rebuild_cache.dir
+/home/andrea/experiments/TLS/libcurl/CMakeFiles/package.dir
+/home/andrea/experiments/TLS/libcurl/CMakeFiles/install/strip.dir
+/home/andrea/experiments/TLS/libcurl/CMakeFiles/tls_perf.dir

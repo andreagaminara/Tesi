@@ -1,0 +1,12 @@
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/rebuild_cache.dir
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/perf_server.dir
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/perf_client.dir
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/echo_client.dir
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/duck_server.dir
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/echo_server.dir
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/http_client.dir
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/md5_client.dir
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/duck_client.dir
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/md5_server.dir
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/edit_cache.dir
+/home/andrea/experiments/QUIC/lsquic/bin/CMakeFiles/http_server.dir

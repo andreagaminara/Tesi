@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/andrea/experiments/QUIC/lsquic/src/liblsquic/lsquic_min_heap.c
+assert.h
+-
+stddef.h
+-
+stdint.h
+-
+lsquic_min_heap.h
+/home/andrea/experiments/QUIC/lsquic/src/liblsquic/lsquic_min_heap.h
+
+/home/andrea/experiments/QUIC/lsquic/src/liblsquic/lsquic_min_heap.h
+
+/home/andrea/experiments/QUIC/lsquic/tests/test_min_heap.c
+assert.h
+-
+stddef.h
+-
+stdint.h
+-
+stdio.h
+-
+stdlib.h
+-
+lsquic_min_heap.h
+/home/andrea/experiments/QUIC/lsquic/tests/lsquic_min_heap.h
+
+src/liblsquic/lsquic_min_heap.h
+

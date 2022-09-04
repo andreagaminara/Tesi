@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/andrea/experiments/QUIC/lsquic/tests/test_lsquic_hash.c
+assert.h
+-
+stdint.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/queue.h
+-
+unistd.h
+-
+lsquic_hash.h
+/home/andrea/experiments/QUIC/lsquic/tests/lsquic_hash.h
+
+src/liblsquic/lsquic_hash.h
+

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/andrea/experiments/QUIC/lsquic/tests/test_varint.c
+assert.h
+-
+stddef.h
+-
+stdint.h
+-
+lsquic_varint.h
+/home/andrea/experiments/QUIC/lsquic/tests/lsquic_varint.h
+vc_compat.h
+/home/andrea/experiments/QUIC/lsquic/tests/vc_compat.h
+
+src/liblsquic/lsquic_varint.h
+

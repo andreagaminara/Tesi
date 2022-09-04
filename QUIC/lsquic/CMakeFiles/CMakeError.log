@@ -1,0 +1,35 @@
+Determining if the IP_DONTFRAG exist failed with the following output:
+Change Dir: /home/andrea/experiments/QUIC/lsquic/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_57bec/fast && /usr/bin/make -f CMakeFiles/cmTC_57bec.dir/build.make CMakeFiles/cmTC_57bec.dir/build
+make[1]: ingresso nella directory «/home/andrea/experiments/QUIC/lsquic/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_57bec.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -DLSQUIC_DEBUG_NEXT_ADV_TICK=1 -DLSQUIC_CONN_STATS=1 -Wall -Wextra -Wno-unused-parameter -fno-omit-frame-pointer -Wno-missing-field-initializers -O0 -g3     -o CMakeFiles/cmTC_57bec.dir/CheckSymbolExists.c.o   -c /home/andrea/experiments/QUIC/lsquic/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andrea/experiments/QUIC/lsquic/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/andrea/experiments/QUIC/lsquic/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘IP_DONTFRAG’ undeclared (first use in this function); did you mean ‘IPV6_DONTFRAG’?
+    8 |   return ((int*)(&IP_DONTFRAG))[argc];
+      |                   ^~~~~~~~~~~
+      |                   IPV6_DONTFRAG
+/home/andrea/experiments/QUIC/lsquic/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/andrea/experiments/QUIC/lsquic/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+    4 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+make[1]: *** [CMakeFiles/cmTC_57bec.dir/build.make:66: CMakeFiles/cmTC_57bec.dir/CheckSymbolExists.c.o] Errore 1
+make[1]: uscita dalla directory «/home/andrea/experiments/QUIC/lsquic/CMakeFiles/CMakeTmp»
+make: *** [Makefile:121: cmTC_57bec/fast] Errore 2
+
+
+File /home/andrea/experiments/QUIC/lsquic/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IP_DONTFRAG
+  return ((int*)(&IP_DONTFRAG))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
