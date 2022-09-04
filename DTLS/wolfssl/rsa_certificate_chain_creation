@@ -1,0 +1,6 @@
+openssl req -new -newkey rsa:2048 -nodes -out ca.csr -keyout ca.key
+openssl x509 -trustout -signkey ca.key -days 365 -req -in ca.csr -out ca.pem
+
+openssl genrsa -out server.key 2048
+openssl req -new -key server.key -out server.csr
+openssl x509 -req -days 365 -in server.csr -CA ca.pem -CAkey ca.key -set_serial 01 -out server.crt
